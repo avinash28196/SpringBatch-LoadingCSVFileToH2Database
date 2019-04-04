@@ -1,4 +1,4 @@
-package com.LendingClub.demo.model;
+package com.LoadCsvIntoDb.demo.model;
 
 public class Hotels {
 	

@@ -1,7 +1,8 @@
-package com.LendingClub.demo.config;
+package com.LoadCsvIntoDb.demo.config;
  
-import com.LendingClub.demo.model.Hotels;
 import org.springframework.batch.item.ItemProcessor;
+
+import com.LoadCsvIntoDb.demo.model.Hotels;
 
 
  

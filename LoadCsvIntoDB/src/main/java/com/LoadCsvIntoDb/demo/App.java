@@ -1,4 +1,4 @@
-package com.LendingClub.demo;
+package com.LoadCsvIntoDb.demo;
  
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
