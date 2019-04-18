@@ -18,9 +18,9 @@
 	</dependency>
 ```
 
-1. **spring-boot-starter-batch** Enables us to create and schedule jobs and other various tasks executed.
+1. **spring-boot-starter-batch** Enables us to create and schedule jobs and various other batch opertaions can be achieved. 
 
-2. **h2** will enables the h2 database and allow batch jobs to write into the database
+2. **h2** H2 Database is In memory light weight, which provides application console to perform CRUD operations. In our example we will allow batch jobs to write into the database.
 
 ### 2. configuring application.properties for h2 database and batch ops.
 
