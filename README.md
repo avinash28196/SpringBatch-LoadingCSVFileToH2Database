@@ -8,14 +8,13 @@
 
  ```
     <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-batch</artifactId>
-	  </dependency>
-
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-batch</artifactId></dependency>
+    </dependency>
     <dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-	</dependency>
+	<groupId>com.h2database</groupId>
+	<artifactId>h2</artifactId>
+    </dependency>
 ```
 
 1. **spring-boot-starter-batch** Enables us to create and schedule jobs and various other batch opertaions can be achieved. 
@@ -41,7 +40,7 @@ spring.h2.console.enabled=true
 
 ```
 
-h2 In memory data console will be available at url http://localhost:8080/h2-console/
+h2 is a light weight, In memory database. Provides browser based console will be available at url http://localhost:8080/h2-console/
 
 // Screenshot //
 
