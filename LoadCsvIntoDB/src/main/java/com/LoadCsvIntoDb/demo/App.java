@@ -31,7 +31,10 @@ public class App
         SpringApplication.run(App.class, args);
     }
 
-    //This Job Will Run Once the all the beans are created and job will load the database with given csv file.
+    /**
+     * This Job Will Run Once the all the beans are created and job will load the database with given csv file.
+     * 
+     */
     @PostConstruct
     public void perform() throws Exception {
         JobParameters params = new JobParametersBuilder()
@@ -40,7 +43,11 @@ public class App
         jobLauncher.run(job, params);
     }
 
-    //This will enable other apps to interact with h2 database with tcp port 8090
+    /**
+     * 
+     * This will enable other apps to interact with h2 database with tcp port 8090
+     * 
+     */
     @Bean(initMethod = "start", destroyMethod = "stop")
     public Server h2Server() throws SQLException {
         return Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "8090");
