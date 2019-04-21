@@ -19,7 +19,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 @EnableScheduling
 @Component
-public class App
+public class SpringBatchApp
 {
     @Autowired
     JobLauncher jobLauncher;
@@ -29,15 +29,15 @@ public class App
       
     public static void main(String[] args) {
 
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(SpringBatchApp.class, args);
     }
 
     /**
      * This Job Will Run Once the all the beans are created and job will load the database with given csv file.
      * 
      */
-    @Scheduled(cron = "0 */1 * * * ?")
-   
+//    @Scheduled(cron = "0 */1 * * * ?")
+    @PostConstruct
     public void perform() throws Exception {
         JobParameters params = new JobParametersBuilder()
                 .addString("JobID", String.valueOf(System.currentTimeMillis()))
