@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.context.annotation.Bean;
 import org.h2.tools.Server;
 import org.springframework.stereotype.Component;
@@ -35,7 +36,8 @@ public class App
      * This Job Will Run Once the all the beans are created and job will load the database with given csv file.
      * 
      */
-    @PostConstruct
+    @Scheduled(cron = "0 */1 * * * ?")
+   
     public void perform() throws Exception {
         JobParameters params = new JobParametersBuilder()
                 .addString("JobID", String.valueOf(System.currentTimeMillis()))

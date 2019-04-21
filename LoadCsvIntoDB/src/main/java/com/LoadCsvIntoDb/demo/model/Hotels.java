@@ -7,6 +7,7 @@ public class Hotels {
 	private String description;
 	private String city;
 	private int rating;
+	
 	public Long getId() {
 		return id;
 	}

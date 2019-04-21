@@ -7,14 +7,14 @@
 
 
  ```
-    <dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-batch</artifactId></dependency>
-    </dependency>
-    <dependency>
-	<groupId>com.h2database</groupId>
-	<artifactId>h2</artifactId>
-    </dependency>
+  <dependency>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-batch</artifactId></dependency>
+      </dependency>
+      <dependency>
+  	<groupId>com.h2database</groupId>
+  	<artifactId>h2</artifactId>
+  </dependency>
 ```
 
 1. **spring-boot-starter-batch** Enables us to create and schedule jobs and various other batch opertaions can be achieved.
@@ -136,3 +136,5 @@ This operation is spilt into 3:
 
 
 http://malsolo.com/blog4java/wp-content/uploads/2014/08/spring-batch-reference-model.png
+
+https://howtodoinjava.com/spring-batch/multiresourceitemreader-read-multiple-csv-files-example/
